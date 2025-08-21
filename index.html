@@ -83,6 +83,27 @@
         .cta:hover {
             background: #0056b3;
         }
+        /* --- NEW CLIENTS SECTION STYLES --- */
+        .client-logos {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 40px; /* Space between logos */
+            margin-top: 30px;
+        }
+        .client-logos img {
+            max-width: 75px;
+            height: auto;
+            filter: grayscale(100%); /* Optional: Make logos grayscale to fit the theme */
+            opacity: 0.7;
+            transition: opacity 0.3s, filter 0.3s;
+        }
+        .client-logos img:hover {
+            filter: grayscale(0%);
+            opacity: 1;
+        }
+        /* --- END OF NEW STYLES --- */
         footer {
             text-align: center;
             padding: 20px 0;
@@ -124,6 +145,20 @@
                     <h4>Custom Software</h4>
                     <p>Bespoke software applications that automate processes and solve complex problems.</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients" class="section" style="background: #e8e8e8;">
+        <div class="container">
+            <h3>Trusted by great companies.</h3>
+            <p>We're proud to have partnered with a variety of businesses to help them succeed.</p>
+            <div class="client-logos">
+                <img src="https://mediafornature.org/wp-content/uploads/2025/04/cropped-cropped-WhatsApp-Image-2024-06-19-at-11.38.57-Photoroom.png" alt="Media For Nature">
+                <!-- <img src="images/client2-logo.png" alt="Client 2 Logo">
+                <img src="images/client3-logo.png" alt="Client 3 Logo">
+                <img src="images/client4-logo.png" alt="Client 4 Logo">
+                <img src="images/client5-logo.png" alt="Client 5 Logo"> -->
             </div>
         </div>
     </section>
