@@ -21,12 +21,20 @@
             overflow: hidden;
             padding: 0 2rem;
         }
-        header {
+         header {
             background: #fff;
             color: #333;
             padding-top: 20px;
             min-height: 70px;
             border-bottom: #e8e8e8 1px solid;
+            text-align: center; /* Ensures the logo is centered */
+        }
+        header .logo-container {
+            margin: 0;
+        }
+        header .logo-container img {
+            width: 150px; /* Adjust as needed */
+            height: auto;
         }
         header h1 {
             text-align: center;
@@ -115,7 +123,8 @@
 <body>
 
     <header>
-        <div class="container">
+        <div class="container logo-container">
+            <img src="/images/btnomarginsnobg.png" alt="BUMBUNA TECHNOLOGIES Logo">
             <h1>BUMBUNA TECHNOLOGIES</h1>
         </div>
     </header>
